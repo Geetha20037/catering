@@ -1,0 +1,90 @@
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #28231f;
+  background: #fbf8f3;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base body */
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  background: #fbf8f3;
+}
+
+/* Box sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Display font */
+.font-display {
+  font-family: "Playfair Display", serif;
+}
+
+/* Text selection */
+::selection {
+  background: #b76538;
+  color: white;
+}
+
+/* Completely hide scrollbar */
+html,
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Smooth anchor scrolling */
+a[href^="#"] {
+  scroll-behavior: smooth;
+}
+
+/* Section spacing */
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* Tablet and mobile spacing */
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+/* Prevent horizontal overflow on all devices */
+img {
+  max-width: 100%;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Better mobile scrolling */
+html,
+body {
+  overflow-x: hidden;
+}
